@@ -1,0 +1,113 @@
+watch_stylesheet: true
+watch_config: true
+debug: false
+komorebi:
+  start_command: "komorebic start --whkd"
+  stop_command: "komorebic stop"
+  reload_command: "komorebic stop && komorebic start --whkd"
+bars:
+  status-bar:
+    enabled: true
+    screens: ["*"]
+    class_name: "yasb-bar"
+    alignment:
+      position: "top"
+      center: false
+    blur_effect:
+      enabled: false
+      acrylic: false
+      dark_mode: true
+      round_corners: false
+      border_color: None
+    window_flags:
+      always_on_top: false
+      windows_app_bar: true
+    dimensions:
+      width: "100%"
+      height: 25
+    padding:
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+    widgets:
+      left: ["komorebi_workspaces"]
+      center: ["media"]
+      right: ["wallpapers", "volume", "weather", "clock"]
+widgets:
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "time {%Y-%m-%d %H:%M:%S}"
+      timezones: []
+      callbacks:
+        on_left: "do_nothing"
+        on_right: "do_nothing"
+  komorebi_workspaces:
+    type: "komorebi.workspaces.WorkspaceWidget"
+    options:
+      label_offline: " \ue654 offline"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
+      hide_empty_workspaces: true
+  volume:
+    type: "yasb.volume.VolumeWidget"
+    options:
+      label: "vol {level}"
+      callbacks:
+        on_right: "toggle_mute"
+        on_left: "do_nothing"
+  media:
+    type: "yasb.media.MediaWidget"
+    options:
+      label: "{artist} \uf001 {title}"
+      hide_empty: true
+      max_field_size:
+        label: 100
+      show_thumbnail: false
+      controls_hide: true
+      callbacks:
+        on_left: "do_nothing"
+  wallpapers:
+    type: "yasb.wallpapers.WallpapersWidget"
+    options:
+      label: "<span>\uf4e5</span>"
+      image_path: 'C:\\Users\\DELL\\.config\\Wallpapers'
+      change_automatically: false 
+      update_interval: 60 
+      gallery:
+        enabled: true 
+        blur: true
+        image_width: 350
+        image_per_page: 5
+        show_buttons: false
+        orientation: "landscape"
+        image_spacing: 20
+        lazy_load: true
+        lazy_load_delay: 80
+        lazy_load_fadein: 400
+        image_corner_radius: 2
+        enable_cache: false
+  weather:
+    type: "yasb.weather.WeatherWidget"
+    options:
+      label: "<span>{icon}</span> {temp}"
+      label_alt: "<span>{icon}</span> {location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
+      api_key: 'f59a8bfa9e6f411e9bf150801260307'
+      update_interval: 600 #Update interval in seconds, Min 600
+      hide_decimal: true
+      location: '"Phu Tho, PT, VN'
+      callbacks:
+        on_left: "toggle_label"
+      icons:
+        sunnyDay: "\udb81\udd99"
+        clearNight: "\udb81\udd99"
+        cloudyDay: "\udb81\udd99"
+        cloudyNight: "\udb81\udd99"
+        rainyDay: "\udb81\udd99"
+        rainyNight: "\udb81\udd99"
+        snowyDay: "\udb81\udd99"
+        snowyNight: "\udb81\udd99"
+        blizzardDay: "\udb81\udd99"
+        default: "\udb81\udd99"
