@@ -46,7 +46,7 @@ widgets:
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-      label_offline: " \ue654 offline"
+      label_offline: " \u26a1 offline"
       label_workspace_btn: "{index}"
       label_workspace_active_btn: "{index}"
       label_workspace_populated_btn: "{index}"
