@@ -143,7 +143,7 @@
     border: none;
     color: var(--text);
     font-size: 14px;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     font-weight: 600;
     padding: 4px 0;
 }
@@ -157,7 +157,7 @@
     margin-right: 4px;
     font-size: 12px;
     font-weight: 800;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     max-height: 26px;
 }
 
@@ -168,20 +168,20 @@
 }
 .quick-launch-popup .results-list-view {
     font-size: 13px;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     font-weight: 800;
     color: var(--text);
 }
 .quick-launch-popup .results-list-view .description {
     color: var(--subtext0);
     font-size: 11px;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     font-weight: 600;
 }
 .quick-launch-popup .results-list-view .separator {
     color: var(--overlay0);
     font-size: 11px;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     font-weight: 600;
     padding: 4px 0 4px 12px;
 }
@@ -195,7 +195,7 @@
 }
 .quick-launch-popup .results-empty-text {
     font-size: 20px;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     color: var(--text);
     padding-top: 8px;
 }
@@ -209,7 +209,7 @@
     font-size: 12px;
     color: var(--subtext0);
     padding: 8px 12px;
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     background-color: rgba(255, 255, 255, 0.03);
     border: none;
 }
@@ -220,19 +220,19 @@
 .quick-launch-popup .preview .preview-meta {
     padding: 6px 12px;
     border-top: 1px solid var(--surface0);
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
 }
 .quick-launch-popup .preview .preview-meta .preview-title {
     font-size: 13px;
     font-weight: 800;
     color: var(--text);
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     margin-bottom: 10px;
     margin-left: -2px;
 }
 .quick-launch-popup .preview .preview-meta .preview-subtitle {
     font-size: 11px;
     color: var(--subtext0);
-    font-family: "JetBrainsMono NFP";
+    font-family: "JetBrainsMono NerdFont";
     padding-bottom: 1px;
 }
