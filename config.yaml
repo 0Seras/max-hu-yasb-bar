@@ -79,14 +79,14 @@ widgets:
       gallery:
         enabled: true 
         blur: true
-        image_width: 350
+        image_width: 255
         image_per_page: 5
         show_buttons: false
         orientation: "landscape"
         image_spacing: 20
         lazy_load: true
         lazy_load_delay: 80
-        lazy_load_fadein: 400
+        lazy_load_fadein: 360
         image_corner_radius: 2
         enable_cache: false
   weather:
