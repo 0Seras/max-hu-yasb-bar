@@ -97,7 +97,7 @@ widgets:
       api_key: 'f59a8bfa9e6f411e9bf150801260307'
       update_interval: 600 #Update interval in seconds, Min 600
       hide_decimal: true
-      location: 'your location'
+      location: 'your location' #format 'Los Angeles, CA, USA'
       callbacks:
         on_left: "toggle_label"
       icons:
