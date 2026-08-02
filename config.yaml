@@ -73,7 +73,7 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf4e5</span>"
-      image_path: 'C:\\Users\\DELL\\.config\\Wallpapers'
+      image_path: 'put your path here' # format C:\\Users\\any\\any\\any
       change_automatically: false 
       update_interval: 60 
       gallery:
@@ -97,7 +97,7 @@ widgets:
       api_key: 'f59a8bfa9e6f411e9bf150801260307'
       update_interval: 600 #Update interval in seconds, Min 600
       hide_decimal: true
-      location: '"Phu Tho, PT, VN'
+      location: 'your location'
       callbacks:
         on_left: "toggle_label"
       icons:
