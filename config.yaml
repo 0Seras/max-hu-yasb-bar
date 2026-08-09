@@ -50,7 +50,7 @@ widgets:
       label_workspace_btn: "{index}"
       label_workspace_active_btn: "{index}"
       label_workspace_populated_btn: "{index}"
-      hide_empty_workspaces: false
+      hide_empty_workspaces: true
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
