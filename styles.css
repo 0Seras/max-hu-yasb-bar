@@ -76,6 +76,10 @@
     margin: 0 1px 0 1px;
     height: 28px;
     padding: 0 6px;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+    transition: all 220ms ease-out;
 }
 
 .komorebi-workspaces .ws-btn.populated {
