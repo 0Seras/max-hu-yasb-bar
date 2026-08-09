@@ -21,6 +21,19 @@
     font-family: "JetBrainsMono NFP";
 }
 
+/* Tooltip */
+.tooltip {
+    background-color: var(--background);
+    border-radius: var(--border-radius);
+    color: var(--text);
+    padding: 2px 2px;
+    font-size: var(--fontSize);
+    font-family: var(--system-font);
+    font-weight: var(--fontWeight);
+    margin-top: 2px;
+    border: 4px solid var(--border);
+}
+
 .yasb-bar {
     padding: 0 8px; /* tăng padding ngang để các widget không sát mép */
     background-color: var(--background);
@@ -91,8 +104,7 @@
 }
 
 /* QUICK LAUNCH */
-
-/* icon trên bar - ép trắng giống các icon khác, ghi đè màu accent mặc định của Qt */
+/* icon trên bar*/
 .quick-launch-widget,
 .quick-launch-widget .label,
 .quick-launch-widget .icon {
@@ -109,7 +121,6 @@
     outline: none;
     border: none;
 }
-
 /* popup - khung chính, giữ đồng bộ nền đen với bar */
 .quick-launch-popup .container {
     background-color: rgba(0, 0, 0, 0.88);
@@ -235,4 +246,12 @@
     color: var(--subtext0);
     font-family: "JetBrainsMono NerdFont";
     padding-bottom: 1px;
+}
+.weather-wiget,
+.weather-widget .label,
+.weather-widget .icon {
+    color: var(--text) !important;
+    font-size: 11px;
+    padding: 0 2px;
+    margin: 0 1px;
 }
