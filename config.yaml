@@ -46,11 +46,11 @@ widgets:
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
-      label_offline: " \u26a1 offline"
+      label_offline: " 天 offline"
       label_workspace_btn: "{index}"
       label_workspace_active_btn: "{index}"
       label_workspace_populated_btn: "{index}"
-      hide_empty_workspaces: true
+      hide_empty_workspaces: false
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
@@ -64,7 +64,7 @@ widgets:
       label: "{artist} \uf001 {title}"
       hide_empty: true
       max_field_size:
-        label: 100
+        label: 80
       show_thumbnail: false
       controls_hide: true
       callbacks:
@@ -73,31 +73,34 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf4e5</span>"
-      image_path: 'put your path here' # format C:\\Users\\any\\any\\any
+      image_path: 'C:\\Users\\DELL\\.config\\Wallpapers'
       change_automatically: false 
       update_interval: 60 
+      engine:
+        enabled: true
+        animation: "slide_top" # circle/slide_top/diamond/split
       gallery:
         enabled: true 
         blur: true
-        image_width: 255
+        image_width: 250
         image_per_page: 5
         show_buttons: false
         orientation: "landscape"
         image_spacing: 20
         lazy_load: true
         lazy_load_delay: 80
-        lazy_load_fadein: 360
+        lazy_load_fadein: 300
         image_corner_radius: 2
         enable_cache: false
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
-      label: "<span>{icon}</span> {temp}"
-      label_alt: "<span>{icon}</span> {location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
+      label: "<span> {icon} </span> {temp}"
+      label_alt: "<span> {icon} </span> {location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
       api_key: 'f59a8bfa9e6f411e9bf150801260307'
       update_interval: 600 #Update interval in seconds, Min 600
       hide_decimal: true
-      location: 'your location' #format 'Los Angeles, CA, USA'
+      location: '"Phu Tho, PT, VN'
       callbacks:
         on_left: "toggle_label"
       icons:
@@ -114,7 +117,7 @@ widgets:
   quick_launch:
     type: "yasb.quick_launch.QuickLaunchWidget"
     options:
-      label: "<span>\uf002</span>"
+      label: "<span></span>"
       search_placeholder: "Search applications..."
       max_results: 30
       show_icons: true
@@ -132,4 +135,4 @@ widgets:
       keybindings:
         - keys: "alt+space"
           action: "toggle_quick_launch"
-          screen: "primary"      
+          screen: "primary"
