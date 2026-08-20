@@ -73,7 +73,7 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\uf4e5</span>"
-      image_path: 'C:\\Users\\DELL\\.config\\Wallpapers'
+      image_path: 'Add path like right #path' # D:\\Customize\\Image\\Wallpapers
       change_automatically: false 
       update_interval: 60 
       engine:
