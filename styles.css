@@ -25,9 +25,9 @@
 .tooltip {
     background-color: #000000;
     color: var(--text);
-    border-radius: 6;
+    border-radius: 5;
     border: 1px solid var(--overlay0);
-    padding: 6px 10px;
+    padding: 5px 5px;
     font-size: 11px;
     font-family: "JetBrainsMono NFP";
     font-weight: 600;
@@ -52,13 +52,13 @@
 }
 
 .yasb-bar {
-    padding: 0 8px; /* tăng padding ngang để các widget không sát mép */
+    padding: 0 8px; /* adding padding*/
     background-color: var(--background);
 }
 
-/* Thêm khoảng cách giữa các widget */
+/* widget spacing */
 .widget {
-    margin: 0 6px; /* cách đều trái phải 6px */
+    margin: 0 6px;
 }
 
 .label {
@@ -69,7 +69,7 @@
 .widget .label {
     padding: 1px 0px 1px 0px;
 }
-
+/* Komoribic */
 .komorebi-workspaces .ws-btn {
     border: none;
     color: var(--text-empty);
@@ -79,7 +79,7 @@
     border-radius: 5px;
     height: 10px;
     width: 10px;
-    transition: all 220ms ease-out;
+    transition: all 220ms ease-out;    /* animation */
 }
 
 .komorebi-workspaces .ws-btn.populated {
@@ -90,8 +90,7 @@
     color: var(--text);
     font-weight: 900;
 }
-/* walpaper shhessh */
-
+/* walpaper*/
 .wallpapers-widget {
     padding: 0 6px 2px 10px;
 }
@@ -101,21 +100,52 @@
     margin: 0;
 }
 .wallpapers-gallery-buttons {
-    background-color:rgba(255, 255, 255, 0);
-    color: white;
-    border: none;
-    font-size: 14px;
+    background-color: #000000;
+    color: var(--text);
+    border: 1px solid var(--overlay0);
+    font-size: 11px;
+    font-weight: 800;
     padding: 8px 0;
-    border-radius: 8px;
-    margin:0 8px 8px 8px;
+    border-radius: 0;
+    margin: 0 8px 8px 8px;
     width: 600px;
 }
 .wallpapers-gallery-buttons:hover {
-    background-color:rgba(255, 255, 255, 0.1)
+    background-color: #1a1a1a;
+}
+
+/* Wallpaper right-click */
+.context-menu {
+    background-color: #000000;
+    color: var(--text);
+    border-radius: 0;
+    border: 1px solid var(--overlay0);
+    padding: 2px 2px;
+}
+.context-menu::item {
+    background-color: transparent;
+    color: var(--text);
+    padding: 6px 14px;
+    margin: 0px 0px;
+    border-radius: 0;
+    min-width: 100px;
+}
+.context-menu::item:selected {
+    background-color: #1a1a1a;
+    color: var(--text);
+}
+.context-menu::separator {
+    height: 1px;
+    background-color: var(--overlay0);
+    margin: 4px 6px;
+}
+.context-menu::item:disabled {
+    color: var(--text-empty);
+    background-color: transparent;
 }
 .wallpapers-gallery-image {
     border: 4px solid transparent;
-    border-radius: 10px;
+    border-radius: 5;
 }
 .wallpapers-gallery-image:hover {
     border: 4px solid rgb(66, 68, 83);
@@ -125,7 +155,7 @@
 }
 
 /* QUICK LAUNCH */
-/* icon trên bar*/
+/* icon*/
 .quick-launch-widget,
 .quick-launch-widget .label,
 .quick-launch-widget .icon {
@@ -142,13 +172,13 @@
     outline: none;
     border: none;
 }
-/* popup - khung chính, giữ đồng bộ nền đen với bar */
+/* popup */
 .quick-launch-popup .container {
     background-color: rgba(0, 0, 0, 0.88);
     border: 1px solid var(--surface0);
 }
 
-/* thanh search */
+/* search bar */
 .quick-launch-popup .search {
     padding: 12px 16px;
     background-color: transparent;
@@ -193,7 +223,7 @@
     max-height: 26px;
 }
 
-/* danh sách kết quả */
+/* results list */
 .quick-launch-popup .results {
     background: transparent;
     padding: 8px;
@@ -232,7 +262,7 @@
     padding-top: 8px;
 }
 
-/* preview pane (bên phải, khi có mô tả/hình ảnh) */
+/* preview*/
 .quick-launch-popup .preview {
     background: rgba(0, 0, 0, 0);
     border-left: 1px solid var(--surface0);
