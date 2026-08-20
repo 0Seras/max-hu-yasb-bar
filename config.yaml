@@ -72,7 +72,7 @@ widgets:
   wallpapers:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
-      label: "<span>\uf4e5</span>"
+      label: "<span> \uf4e5 </span>"
       image_path: 'Add path like right #path' # D:\\Customize\\Image\\Wallpapers
       change_automatically: false 
       update_interval: 60 
@@ -100,7 +100,7 @@ widgets:
       api_key: 'f59a8bfa9e6f411e9bf150801260307'
       update_interval: 600 #Update interval in seconds, Min 600
       hide_decimal: true
-      location: '"Phu Tho, PT, VN'
+      location: '"Your location' #Los Angeles, CA, USA
       callbacks:
         on_left: "toggle_label"
       icons:
@@ -121,7 +121,7 @@ widgets:
       search_placeholder: "Search applications..."
       max_results: 30
       show_icons: true
-      icon_size: 20
+      icon_size: 1
       popup:
         width: 650
         height: 400
