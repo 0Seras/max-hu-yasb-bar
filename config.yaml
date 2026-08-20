@@ -64,7 +64,7 @@ widgets:
       label: "{artist} \uf001 {title}"
       hide_empty: true
       max_field_size:
-        label: 80
+        label: 136
       show_thumbnail: false
       controls_hide: true
       callbacks:
